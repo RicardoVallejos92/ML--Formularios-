@@ -1,0 +1,254 @@
+/* main */
+
+.home main {
+    background-size: 90%;
+    text-align: center;
+}
+
+.home main h2 {
+    display: block;
+    text-align: left;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.home main section article {
+    display: block;
+    margin: 10px;
+}
+
+.home main section article div .cajita {
+    display: block;
+    text-align: left;
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    margin-top: -2px;
+}
+
+.home main section article div .cajita a.truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    color: #39b54a;
+    margin-top: -30px;
+    right: 35px;
+}
+
+.home main section article div .cajita .precio {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.home main section article div .cajita .off {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.home main section article div .cajita .descripcion {
+    display: none;
+    font-size: 16px;
+}
+
+
+/* footer */
+
+footer {
+    margin: 0;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer section h4 {
+    margin: 10px;
+}
+
+footer section a.seg {
+    margin-bottom: 5px;
+    background-size: 2em;
+    color: #1259c3;
+    font-size: 2em
+}
+
+footer div {
+    text-align: left;
+    margin-top: 45px;
+}
+
+/* tablet */
+
+@media (min-width : 630px){ 
+
+    .home header .arriba {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .home header img.logo {
+        width: 170px;
+    }
+
+    .home header span.buscador {
+        margin-top: 30px;
+    }    
+
+    .home header span.mano {
+        margin-top: 40px;
+    }
+
+    .home header span.mano img {
+        margin-top: -25px;
+    }
+
+    .home header {
+        padding-bottom: 1px;
+    }
+
+    .home header .lista1 ul {
+        display: contents;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .home header .lista2 ul {
+        display: contents;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .home header .lista1 ul li {
+        margin: 5px;
+    }
+
+    .home header .lista2 ul li {
+        margin: 5px;
+    }
+
+    .home header .ambas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .home header .lista2 ul a.icono {
+        display: contents;
+    }
+
+    .home header .cajaburger {
+        display: none;
+    }
+
+    
+    .caja {
+        width: 40%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .home main section.banner {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .home main section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .home main section article div .cajita {
+        display: block;
+    }
+
+    .home main section article div .cajita a.truck {
+        position: relative;
+        left: 100px;
+        font-size: 15px;
+        text-align: center;
+        left: 82%;
+        border: none;
+    }
+
+    .home main section article div .cajita a.truck i {
+        font-size: 10px;
+        border: 1px solid #39b54a;
+        padding: 5px;
+        border-radius: 50%;
+    }
+
+    .home main section article div .cajita .precio {
+        font-size: 13px;
+    }
+
+    .home main section article div .cajita .off {
+        font-size: 12px;
+    }
+
+    .home main section article div .cajita .descripcion {
+        font-size: 13px;
+        display: contents;
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+/* desktop */
+
+@media (min-width : 769px){
+
+    .home header section.arriba {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .home header img.logo {
+        width: 250px;
+    }
+
+    .home header span.buscador {
+        margin-top: 30px;
+    }    
+
+    .home header span.mano {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .home header span.mano img {
+        margin-top: -45px;
+    }
+
+
+    .home header .ambas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .home header .lista1 ul, .home header .lista2 ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .home header .lista1 ul li, .home header .lista2 ul li {
+        margin: 10px;
+    }
+
+    .caja {
+        width: 20%;
+    }
+
+    .home main section article div .cajita {
+        display: block;
+        padding: 10px;
+    }
+}
